@@ -4,7 +4,7 @@
   "description": "User Todo List",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "concurrently \"webpack-dev-server --hot --open\"\"nodemon server/server.js\"",
+    "start": "concurrently \"webpack-dev-server --hot --open\" \"nodemon server/server.js\"",
     "build": "webpack",
     "test": "test"
   },
