@@ -1,0 +1,50 @@
+{
+  "name": "goodmanage",
+  "version": "1.0.0",
+  "description": "User Todo List",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "concurrently \"webpack-dev-server --hot --open\"\"nodemon server/server.js\"",
+    "build": "webpack",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoreanSquad/GoodManage.git"
+  },
+  "keywords": [
+    "todo",
+    "manage"
+  ],
+  "author": "K Squad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KoreanSquad/GoodManage/issues"
+  },
+  "homepage": "https://github.com/KoreanSquad/GoodManage#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/plugin-syntax-jsx": "^7.17.12",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "babel-loader": "^8.2.5",
+    "concurrently": "^7.2.2",
+    "html-webpack-plugin": "^5.5.0",
+    "nodemon": "^2.0.16",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "jest-environment-jsdom": "^28.1.1",
+    "pg": "^8.7.3",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0"
+  }
+}
