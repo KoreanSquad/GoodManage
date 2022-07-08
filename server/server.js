@@ -1,5 +1,6 @@
 const express = require('express');
 const mainRouter = ('')
+const loginRouter = ('')
 const PORT = 3000;
 
 
@@ -7,7 +8,9 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api', mainRouter)
+// Api Endpoints
+app.use('/api', mainRouter);
+app.use('/login', loginRouter);
 
 // Global Error Catcher
 app.use((err, req, res, next) => {
